@@ -1,5 +1,7 @@
 # Sistema de Login e Funcionalidades
 
+Repositório referente a GS da materia de COMPUTATIONALTHINKING USING PYTHON
+
 ## Funcionalidades
 
 1. **Autenticação de Usuário:**
