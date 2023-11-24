@@ -17,7 +17,7 @@ def exibir_opcoes(usuario):
     print(f"Bem-vindo, {usuario}!\n")
     while True:
         print("Escolha uma opção:")
-        print("1. Funcionalidade 1")
+        print("1. Historico do paciente")
         print("2. Funcionalidade 2")
         print("3. Funcionalidade 3")
         print("0. Sair")
@@ -28,7 +28,35 @@ def exibir_opcoes(usuario):
                 print("Saindo do programa. Até logo!")
                 break
             elif escolha == 1:
-                print("Executando Funcionalidade 1.\n")
+                print(f"Historico Medico:
+    def __init__(self, nome, idade, gravidez_anterior, complicacoes_anteriores):
+        self.nome = nome
+        self.idade = idade
+        self.gravidez_anterior = gravidez_anterior
+        self.complicacoes_anteriores = complicacoes_anteriores
+        self.consultas_prenatais = []
+
+    def adicionar_consulta_prenatal(self, data, peso, pressao_arterial, batimentos_cardiacos_fetais):
+        consulta = {
+            'Data': data,
+            'Peso': peso,
+            'Pressao_Arterial': pressao_arterial,
+            'Batimentos_Cardiacos_Fetais': batimentos_cardiacos_fetais
+        }
+        self.consultas_prenatais.append(consulta)
+
+    def exibir_historico(self):
+        print(f"\nHistórico Médico para {self.nome}:")
+        print(f"Idade: {self.idade}")
+        print(f"Gravidez Anterior: {self.gravidez_anterior}")
+        print(f"Complicações Anteriores: {self.complicacoes_anteriores}")
+        print("\nConsultas Pré-natais:")
+        for consulta in self.consultas_prenatais:
+            print("Data:", consulta['Data'])
+            print("Peso: {} kg".format(consulta['Peso']))
+            print("Pressão Arterial: {}/{} mmHg".format(*consulta['Pressao_Arterial']))
+            print("Batimentos Cardíacos Fetais: {} bpm".format(consulta['Batimentos_Cardiacos_Fetais']))
+            print("\n---")\n")
             elif escolha == 2:
                 print("Executando Funcionalidade 2.\n")
             elif escolha == 3:
