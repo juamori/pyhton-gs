@@ -1,7 +1,5 @@
 # Sistema de Login e Funcionalidades
 
-Este é um exemplo de código em Python que simula um sistema de login e apresenta opções de funcionalidade para o usuário. O código utiliza estruturas de decisão, tratamento de exceções e funções com passagem de parâmetros e retorno.
-
 ## Funcionalidades
 
 1. **Autenticação de Usuário:**
